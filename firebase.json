@@ -6,11 +6,12 @@
       "**/.*",
       "**/node_modules/**",
       "*.json",
+      "*.md",
       "tailwind.config.js",
       "assets/tailwind-src.css",
       "assets/tailwind.css",
       "assets/style.css",
-      "*.md"
+      "assets/img/*.png"
     ]
   }
 }

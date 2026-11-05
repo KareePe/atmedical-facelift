@@ -305,3 +305,72 @@ body {
 .faq-item summary::-webkit-details-marker {
   display: none;
 }
+
+/* ---------- 7. Video modal (Real Case Story) ---------- */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(20, 12, 36, 0.85);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.video-modal[data-open="true"] {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video-modal__box {
+  position: relative;
+  height: min(85vh, 85dvh);
+  aspect-ratio: 9 / 16;
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-modal__box video,
+.video-modal__box iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: contain;
+  background: #000;
+}
+
+.video-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 28px;
+  line-height: 44px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.video-modal__close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+body.video-modal-open {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video-modal {
+    transition: none;
+  }
+}
