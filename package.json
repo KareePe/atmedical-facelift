@@ -1,0 +1,11 @@
+{
+  "name": "atmedical-facelift",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/tailwind-src.css -o ./assets/tailwind.css --config ./tailwind.config.js --minify && cat assets/tailwind.css assets/style.css > assets/app.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

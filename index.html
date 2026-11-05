@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ศัลยกรรมดึงหน้า Facelift ยกกระชับถึงชั้น SMAS | AT Medical Clinic</title>
+    <meta
+      name="description"
+      content="ศัลยกรรมดึงหน้า (Facelift) ยกกระชับถึงชั้น SMAS ดูแลแก้มตก ร่องแก้ม และกรอบหน้า ออกแบบตามโครงสร้างใบหน้าแต่ละบุคคล โดย AT Medical Clinic by Eye Bangkok Hospital"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="AT Medical Clinic by Eye Bangkok Hospital" />
+    <meta name="theme-color" content="#491251" />
+
+    <!-- TODO: เพิ่ม canonical, og:url และ og:image เมื่อรู้โดเมนจริงของหน้านี้ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AT Medical Clinic by Eye Bangkok Hospital" />
+    <meta property="og:title" content="ศัลยกรรมดึงหน้า Facelift ยกกระชับถึงชั้น SMAS | AT Medical Clinic" />
+    <meta
+      property="og:description"
+      content="ดูแลแก้มตก ร่องแก้ม และกรอบหน้า ออกแบบตามโครงสร้างใบหน้าแต่ละบุคคล"
+    />
+    <meta property="og:locale" content="th_TH" />
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- App CSS: Tailwind + style.css รวมเป็นไฟล์เดียว (build ด้วย `npm run build:css`) -->
+    <link rel="stylesheet" href="assets/app.css" />
+
+    <!-- Preload รูป LCP ของ hero (background-image ใน section#home) -->
+    <link rel="preload" as="image" href="assets/img/hero-person.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/img/bg-hero.webp" />
+
+    <link
+      rel="preload"
+      href="assets/fonts/DBHelvethaicaX/DBHelvethaicaX-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/DBHelvethaicaX/DBHelvethaicaX-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Swiper / AOS: ใช้เฉพาะ below-the-fold โหลดแบบไม่ block render -->
+    <link rel="preload" as="style" href="assets/vendor/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/swiper/swiper-bundle.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <link rel="preload" as="style" href="assets/vendor/aos/aos.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/aos/aos.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
+    </noscript>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-54RM52BN");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body class="bg-white text-ink font-sans antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-54RM52BN"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ===== Preloader ===== -->
+    <div
+      id="preloader"
+      class="fixed inset-0 z-[9999] flex flex-col items-center justify-center gap-[20px] bg-lilac-pale transition-opacity duration-500 motion-reduce:transition-none"
+    >
+      <img src="assets/img/icons/logo-main-d.svg" alt="AT Medical Clinic" class="w-full max-w-[200px]" />
+      <div
+        class="w-[44px] h-[44px] rounded-full border-4 border-lilac border-t-plum animate-spin motion-reduce:animate-none"
+      ></div>
+    </div>
+
+    <!-- ===== Header ===== -->
+    <header id="header"
+      data-scrolled="false"
+      class="bg-header sticky top-0 z-40 h-[64px] xl:h-[155px] xl:data-[scrolled=true]:h-[100px] transition-[height] duration-300 motion-reduce:transition-none"
+    >
+      <div class="mx-auto h-full max-w-[1200px] px-[16px] xl:px-0 flex items-center justify-between">
+        <a href="#home" aria-label="AT Medical Clinic" class="relative block w-[167px] h-[24px] xl:w-[380px] xl:h-[55px]">
+          <img src="assets/img/icons/logo-main-d.svg" alt="" class="absolute left-0 top-0 w-full h-auto" />
+          <img src="assets/img/icons/logo-by-d.svg" alt="" class="absolute left-[58.77%] bottom-0 w-[41.1%] h-auto" />
+        </a>
+        <a
+          href="tel:0928893872"
+          class="inline-flex items-center gap-[5px] xl:gap-[9px] rounded-[100px] bg-plum text-white font-bold h-[27px] xl:h-auto px-[13px] xl:px-[30px] xl:py-[15px] text-[20px] leading-[18px] xl:text-[38px] xl:leading-[35px] whitespace-nowrap"
+        >
+          <img src="assets/img/icons/phone-w.svg" alt="" class="w-[12px] h-[12px] xl:w-[34px] xl:h-[34px]" />
+          092-889-3872
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== Hero ===== -->
+      <section id="home" role="img" aria-label="คุณเชน จตุพล รีวิวศัลยกรรมดึงหน้าที่ AT Medical Clinic" class="bg-hero relative overflow-hidden xl:h-[725px]">
+        <div class="relative z-10 mx-auto w-full max-w-[390px] xl:max-w-[1200px] px-[25px] xl:px-0 pt-[30px] xl:pt-[52px] flex flex-col items-center xl:items-start gap-[15px] xl:gap-[20px]">
+          <p class="rounded-[8px] bg-lilac-pale px-[11px] xl:px-[20px] py-[6px] text-[18px] leading-[21px] xl:text-[27px] xl:leading-[24px] text-center text-plum-soft">
+            ยกกระชับลึกถึงชั้น SMAS ช่วยพยุงโครงสร้างใบหน้าในระดับลึก
+          </p>
+          <h1 class="w-full font-bold text-left text-[34px] leading-[34px] xl:text-[56px] xl:leading-[60px] text-ink">
+            ศัลยกรรมดึงหน้า (Facelift)
+            <br class="xl:hidden" />
+            ยกกระชับถึงชั้น SMAS
+            <span class="block text-accent">ดูแลแก้มตก ร่องแก้ม และกรอบหน้า</span>
+            <span class="block">ออกแบบตามโครงสร้างใบหน้า<br class="xl:hidden" />แต่ละบุคคล</span>
+          </h1>
+          <ul class="hero-points w-full flex flex-col gap-[4px] xl:gap-[8px]"></ul>
+          <a href="https://lin.ee/sHKwZrG" target="_blank" rel="noopener" class="btn btn-plum">
+            <img src="assets/img/icons/line-w.svg" alt="" class="btn-icon-line" />
+            ปรึกษาแพทย์เฉพาะทางฟรี
+          </a>
+          <div class="price-hero rounded-[15px] w-full xl:w-auto flex flex-col items-center justify-center gap-[3px] xl:gap-[6px] px-[21px] xl:px-[24px] py-[3px] xl:py-[16px]">
+            <p class="flex items-end justify-center gap-[10px] whitespace-nowrap font-bold text-price-plum">
+              <span class="text-[26px] leading-[26px] xl:text-[40px] xl:leading-[40px]">ดึงหน้าไม่ดมยา</span>
+              <span class="text-[27px] leading-[40px] xl:text-[40px]">
+                <span class="text-[40px] xl:text-[60px]">59,000</span> บาท/ส่วน*
+              </span>
+            </p>
+            <p class="text-[17px] leading-[17px] xl:text-[22px] text-plum">*ราคาสำหรับกรณีทำพร้อมกัน 3 ส่วน</p>
+          </div>
+        </div>
+
+        <!-- Portrait + quote -->
+        <div class="relative left-1/2 -translate-x-1/2 w-[390px] h-[387px] -mt-[2px] xl:left-0 xl:transform-none xl:w-auto xl:mt-0 xl:static xl:h-0">
+          <img
+            src="assets/img/hero-person.webp"
+            alt=""
+            width="575"
+            height="698"
+            fetchpriority="high"
+            class="hero-person absolute bottom-0 left-[68px] w-[316px] h-auto xl:left-[calc(50%_+_70px)] xl:w-[575px]"
+          />
+          <figure class="absolute z-10 left-[30px] top-[199px] w-[205px] h-[148px] xl:left-[calc(50%_+_36px)] xl:top-[502px] xl:w-[380px] xl:h-[141px] xl:justify-center rounded-[20px] bg-white shadow-soft px-[10px] py-[15px] xl:p-[20px] flex flex-col items-center justify-center gap-[10px] text-center">
+            <blockquote class="xl:whitespace-nowrap text-[#705ca7] text-[18px] leading-[18px] xl:text-[24px] xl:leading-[22px]">
+              " ดึงหน้ามา 3 ปี ผลลัพธ์ยังดูดี<br class="xl:hidden" />
+              สำหรับผมการดึงหน้า<br />
+              ไม่ใช่การเปลี่ยนตัวเองแต่คือ<br class="xl:hidden" />การคงความเป็นตัวเอง<br />
+              ในเวอร์ชันที่ดูดี และมั่นใจขึ้น "
+            </blockquote>
+            <figcaption class="font-bold text-plum text-[18px] leading-[18px] xl:text-[24px] xl:leading-[25px]">-เชน จตุพล -</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===== โปรแกรม + Real Case: เรนเดอร์จาก assets/js/program-list.js / story-list.js ===== -->
+      <div id="program-baby-mount"></div>
+
+      <section id="story-baby" class="bg-story-a pt-[54px] pb-[46px] xl:pt-[82px] xl:pb-[94px]" aria-labelledby="story-baby-title">
+        <div class="mx-auto w-full max-w-[1108px] px-[16px] xl:px-0 flex flex-col items-center gap-[30px] xl:gap-[52px]">
+          <div class="flex flex-col items-center gap-[9px] text-center">
+            <h2 id="story-baby-title" class="font-bold text-lilac text-[40px] leading-[50px] xl:text-[46px]">Real Case Story</h2>
+            <p class="text-white text-[28px] leading-[30px] xl:text-[32px] xl:leading-[40px]">โปรแกรมใหม่ล่าสุด BABY FACE LIFT</p>
+          </div>
+          <div class="story-list w-full" data-set="baby"></div>
+        </div>
+      </section>
+
+      <div id="program-list-mount"></div>
+
+      <section id="story-facelift" class="bg-story-b pt-[54px] pb-[48px] xl:pt-[79px] xl:pb-[102px]" aria-labelledby="story-facelift-title">
+        <div class="mx-auto w-full max-w-[1108px] px-[16px] xl:px-0 flex flex-col items-center gap-[30px] xl:gap-[52px]">
+          <div class="flex flex-col items-center gap-[9px] text-center max-w-[324px] xl:max-w-none">
+            <h2 id="story-facelift-title" class="font-bold text-lilac text-[40px] leading-[50px] xl:text-[46px]">Real Case Story</h2>
+            <p class="text-white text-[28px] leading-[30px] xl:text-[32px] xl:leading-[40px]">ยกกระชับใบหน้า คืนกรอบหน้าที่ดูอ่อนเยาว์ ด้วยการวางแผนเฉพาะบุคคล</p>
+          </div>
+          <div class="story-list w-full" data-set="facelift"></div>
+          <p class="max-w-[330px] xl:max-w-[874px] text-center text-white text-[26px] leading-[30px] xl:text-[32px] xl:leading-[40px]">
+            "ดูแลปัญหาความหย่อนคล้อย แก้มตก ร่องแก้ม และกรอบหน้า<br class="hidden xl:inline" />
+            ด้วยเทคนิคศัลยกรรมดึงหน้าที่ออกแบบตามโครงสร้างของแต่ละคน"
+          </p>
+          <div class="flex flex-col xl:flex-row items-center justify-center gap-[20px]">
+            <a href="https://lin.ee/sHKwZrG" target="_blank" rel="noopener" class="btn btn-lilac">
+              <img src="assets/img/icons/line-p.svg" alt="" class="btn-icon-line" />
+              ขอรายละเอียดค่าบริการเฉพาะเคส
+            </a>
+            <a href="tel:0928893872" class="btn btn-silver">
+              <img src="assets/img/icons/phone-p.svg" alt="" class="btn-icon-phone" />
+              092-889-3872
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== เหตุผลที่เลือก ===== -->
+      <section id="reasons" class="bg-white pt-[60px] xl:pt-[105px] pb-[43px] xl:pb-[101px]" aria-labelledby="reasons-title">
+        <div class="mx-auto w-full max-w-[1256px] px-[30px] xl:px-[16px] min-[1288px]:px-0 flex flex-col items-center gap-[50px]">
+          <div class="flex flex-col items-center gap-[9px] text-center">
+            <h2 id="reasons-title" class="font-bold text-ink text-[36px] leading-[45px] xl:text-[46px] xl:leading-[50px]">
+              เหตุผลที่ผู้เข้ารับบริการเลือกทำ Facelift ที่ AT Medical Clinic
+            </h2>
+            <p class="max-w-[330px] xl:max-w-[874px] text-plum-dark text-[26px] leading-[30px] xl:text-[32px] xl:leading-[40px]">
+              วางแผนโดยแพทย์เป็นรายบุคคล มีเคสจริงให้ศึกษา มีทีมดูแลก่อนและหลัง และมีสาขาสำหรับติดตามผล
+            </p>
+          </div>
+
+          <div class="w-full flex flex-col xl:flex-row items-center xl:items-start justify-center gap-[30px]">
+            <img
+              src="assets/img/reasons-team.webp"
+              alt="ทีมแพทย์ AT Medical Clinic"
+              width="1080"
+              height="1080"
+              loading="lazy"
+              class="w-full max-w-[330px] xl:max-w-[586px] xl:w-[586px] aspect-square rounded-[20px]"
+            />
+            <div class="w-full max-w-[330px] xl:max-w-[608px] flex flex-col gap-[25px]">
+              <div class="reason-list contents"></div>
+              <p class="text-left text-plum-dark text-[24px] leading-[30px] xl:text-[25px] xl:leading-[40px]">
+                ผลลัพธ์และความเหมาะสมขึ้นอยู่กับการประเมินของแพทย์และสภาพของแต่ละบุคคล
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col xl:flex-row items-center justify-center gap-[20px]">
+            <a href="https://lin.ee/sHKwZrG" target="_blank" rel="noopener" class="btn btn-plum">
+              <img src="assets/img/icons/line-w.svg" alt="" class="btn-icon-line" />
+              นัดหมายเข้าปรึกษาแพทย์
+            </a>
+            <a href="tel:0928893872" class="btn btn-silver">
+              <img src="assets/img/icons/phone-p.svg" alt="" class="btn-icon-phone" />
+              092-889-3872
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== แผนที่สาขา ===== -->
+      <section id="branches" class="bg-white pb-[43px] xl:pb-[97px]">
+        <img
+          src="assets/img/map.webp"
+          alt="แผนที่สาขา AT Medical Clinic ทั่วประเทศ"
+          width="1080"
+          height="1080"
+          loading="lazy"
+          class="mx-auto w-[352px] max-w-[calc(100%_-_32px)] xl:w-[1080px] h-auto rounded-[20px]"
+        />
+      </section>
+
+      <!-- ===== FAQ ===== -->
+      <section id="faq" class="bg-lilac-soft pt-[62px] xl:pt-[119px] pb-[90px] xl:pb-[137px]" aria-labelledby="faq-title">
+        <div class="mx-auto w-full max-w-[1060px] px-[8px] xl:px-0 flex flex-col items-center gap-[20px] xl:gap-[50px]">
+          <div class="flex flex-col items-center gap-[9px] text-center">
+            <h2 id="faq-title" class="font-bold text-ink text-[36px] leading-[45px] xl:text-[46px] xl:leading-[50px]">
+              คำถามที่ผู้สนใจถามมากที่สุดก่อนตัดสินใจทำ Facelift ดึงหน้า
+            </h2>
+            <p class="max-w-[305px] xl:max-w-[874px] text-plum-dark text-[28px] leading-[30px] xl:text-[32px] xl:leading-[40px]">
+              ความเจ็บ แนวแผล ระยะเวลาของผลลัพธ์ และรายละเอียดค่าบริการ
+            </p>
+          </div>
+          <div class="qna-list w-full max-w-[338px] xl:max-w-none flex flex-col gap-[10px] xl:gap-[20px]"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer id="footer" class="bg-plum px-[44px] py-[40px] xl:px-[16px] xl:py-[108px]">
+      <div class="mx-auto w-full max-w-[1143px] flex flex-col xl:flex-row xl:items-center justify-between gap-[30px]">
+        <div class="flex flex-col gap-[10px] xl:gap-[26px] xl:w-[380px]">
+          <div class="relative w-[246px] h-[36px] xl:w-[380px] xl:h-[55px]">
+            <img src="assets/img/icons/logo-main-w.svg" alt="AT Medical Clinic" class="absolute left-0 top-0 w-full h-auto" />
+            <img src="assets/img/icons/logo-by-w.svg" alt="" class="absolute left-[58.77%] bottom-0 w-[41.1%] h-auto" />
+          </div>
+          <p class="font-medium text-[#fef1f1] text-[22px] leading-[20px] xl:text-[30px] xl:leading-[40px]">บริษัท โรงพยาบาลตากรุงเทพ จำกัด</p>
+          <p class="font-medium text-lilac-soft text-[20px] leading-[20px] xl:text-[25px] xl:leading-[33px] xl:w-[369px]">
+            เลขที่ 88 ซอยเพชรเกษม 70 แขวงบางแคเหนือ<br class="hidden xl:inline" />
+            เขตบางแค กรุงเทพมหานคร 10160
+          </p>
+        </div>
+        <div class="flex flex-col gap-[10px] xl:gap-[20px] xl:w-[359px] font-medium text-[#fef1f1] text-[20px] leading-[20px] xl:text-[25px] xl:leading-[33px]">
+          <p class="text-lilac-soft text-[22px] xl:text-[30px] xl:leading-[40px]">ติดต่อเรา</p>
+          <ul class="flex flex-col gap-[11px]">
+            <li>
+              <a href="tel:0928893872" class="flex items-center gap-[10px] xl:gap-[14px]">
+                <img src="assets/img/icons/footer-phone.svg" alt="" class="w-[20px] h-[20px] xl:w-[30px] xl:h-[30px]" />
+                โทร: 092-889-3872
+              </a>
+            </li>
+            <li>
+              <a href="https://lin.ee/sHKwZrG" target="_blank" rel="noopener" class="flex items-center gap-[10px] xl:gap-[14px]">
+                <img src="assets/img/icons/footer-line.svg" alt="" class="w-[20px] h-[20px] xl:w-[30px] xl:h-[30px]" />
+                Line ID: @medicalclinic
+              </a>
+            </li>
+            <li class="flex items-center gap-[10px] xl:gap-[14px]">
+              <img src="assets/img/icons/footer-fb.svg" alt="" class="w-[20px] h-[20px] xl:w-[30px] xl:h-[30px]" />
+              Facebook: AT Medical Clinic
+            </li>
+          </ul>
+          <p>เวลาทำการ: เปิดบริการทุกวัน 11:00 น. - 20:00 น. (ตามเวลาห้างสรรพสินค้า)</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== Back to top ===== -->
+    <button
+      id="back-to-top"
+      type="button"
+      aria-label="กลับขึ้นด้านบน"
+      data-visible="false"
+      class="fixed bottom-[20px] right-[20px] xl:bottom-[30px] xl:right-[30px] z-50 w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] rounded-full bg-plum shadow-button flex items-center justify-center opacity-0 pointer-events-none translate-y-[10px] data-[visible=true]:opacity-100 data-[visible=true]:pointer-events-auto data-[visible=true]:translate-y-0 transition-[opacity,transform] duration-300 ease-out motion-reduce:transition-none"
+    >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Scripts ของหน้านี้ (utils.js ต้องมาก่อนไฟล์ที่ใช้ esc/escBr) -->
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/hero-list.js"></script>
+    <script src="assets/js/program-list.js"></script>
+    <script src="assets/js/story-list.js"></script>
+    <script src="assets/js/reason-list.js"></script>
+    <script src="assets/js/qna.js"></script>
+    <script src="assets/js/slide.js"></script>
+    <script src="assets/js/header-scroll.js"></script>
+    <script src="assets/js/back-to-top.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
+  </body>
+</html>

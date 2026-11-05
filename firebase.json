@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "*.json",
+      "tailwind.config.js",
+      "assets/tailwind-src.css",
+      "assets/tailwind.css",
+      "assets/style.css",
+      "*.md"
+    ]
+  }
+}

@@ -1,0 +1,307 @@
+/* ==========================================================================
+   AT Medical Facelift — Custom styles
+   ใช้คู่กับ Tailwind (build ด้วย `npm run build:css` รวมเป็น assets/app.css)
+   ========================================================================== */
+
+/* ---------- 0. Fonts: DB Helvethaica X (ไฟล์ .woff2 ชุด v3.2) ---------- */
+@font-face {
+  font-family: "DB Helvethaica X";
+  src: url("fonts/DBHelvethaicaX/DBHelvethaicaX-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DB Helvethaica X";
+  src: url("fonts/DBHelvethaicaX/DBHelvethaicaX-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DB Helvethaica X";
+  src: url("fonts/DBHelvethaicaX/DBHelvethaicaX-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DB Helvethaica X";
+  src: url("fonts/DBHelvethaicaX/DBHelvethaicaX-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DB Helvethaica X";
+  src: url("fonts/DBHelvethaicaX/DBHelvethaicaX-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------- 1. Base / Variables ---------- */
+:root {
+  --header-height: 64px;
+  --font-sans: "DB Helvethaica X", ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --header-height: 155px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- 2. Backgrounds ---------- */
+.bg-header {
+  background: radial-gradient(50% 50% at 50% 50%, #f8ebff 0%, #f0d7fd 100%);
+}
+
+/* พื้นหลัง hero เป็นลายคลื่นอย่างเดียว รูปคุณเชนเป็น <img class="hero-person"> แยกชั้นใน index.html */
+.bg-hero {
+  background: #fff url("img/bg-hero.webp") center bottom / cover no-repeat;
+}
+
+.bg-program-first {
+  background:
+    linear-gradient(180deg, rgba(253, 250, 254, 0) 0%, #f3eaf8 100%),
+    #eecfff;
+}
+
+.bg-wave {
+  background-image: url("img/bg-wave.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  filter: blur(15px);
+  opacity: 0.5;
+}
+
+.bg-story-a,
+.bg-story-b,
+.bg-double,
+.bg-temple,
+.bg-mid {
+  background-color: #491251;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-story-a {
+  background-image: url("img/bg-story-facelift.webp");
+}
+
+.bg-story-b {
+  background-image: url("img/bg-story-facelift.webp");
+}
+
+.bg-double {
+  background-color: #f9f4fc;
+  background-image: url("img/bg-program-double.webp");
+}
+
+.bg-temple {
+  background-color: #fbf8fe;
+  background-image: url("img/bg-program-temple.webp");
+}
+
+.bg-mid {
+  background-color: #fff;
+  background-image: url("img/bg-program-mid.webp");
+}
+
+.bg-program-pale {
+  background: #f9f4fc;
+}
+
+/* ---------- 3. Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 7px 20px;
+  border-radius: 100px;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.btn:focus-visible,
+.icon-arrow:focus-visible,
+.case-thumb:focus-visible {
+  outline: 3px solid #903bc8;
+  outline-offset: 3px;
+}
+
+.btn-plum {
+  background: #491251;
+  color: #fff;
+}
+
+.btn-silver {
+  background: linear-gradient(90deg, #e6e6e7 0%, #fff 50%, #e3e4e4 100%);
+  color: #4c1554;
+}
+
+.btn-lilac {
+  background: linear-gradient(0deg, #cda3ef 0%, #d2a9f1 8.5%, #deb7f7 36.5%, #e5c0fa 69.3%, #e8c3fc 121.5%);
+  color: #4c1554;
+}
+
+.btn-icon-line {
+  width: 20px;
+  height: 19px;
+}
+
+.btn-icon-phone {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 1280px) {
+  .btn {
+    gap: 9px;
+    padding: 15px 30px;
+    font-size: 38px;
+    line-height: 35px;
+  }
+
+  .btn-icon-line {
+    width: 32px;
+    height: 30px;
+  }
+
+  .btn-icon-phone {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* ---------- 4. Program card ---------- */
+.program-title {
+  background: radial-gradient(50% 50% at 50% 50%, #e6e6e6 0%, rgba(230, 230, 230, 0) 100%);
+}
+
+.program-bar {
+  background: linear-gradient(180deg, #773a80 0%, #a661b0 100%);
+  box-shadow: inset 2px 2px 8px rgba(219, 191, 255, 0.5);
+}
+
+.price-box {
+  box-shadow: 12px 12px 16px rgba(0, 0, 0, 0.1), inset 2px 2px 4px #9a84d7;
+}
+
+.price-hero {
+  background: linear-gradient(180deg, #f6e5ff 33.7%, #e8c3fc 100%);
+  box-shadow: 12px 12px 16px rgba(0, 0, 0, 0.1), inset 2px 2px 4px #ebaef4;
+}
+
+.text-price-plum {
+  background: linear-gradient(0deg, #491251 32.5%, #773a80 50%, #5a2665 70.5%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- 5. Swiper ----------
+   swiper-bundle.min.css โหลดทีหลัง app.css จึงต้องใช้ selector สองคลาสให้ชนะ specificity */
+.icon-arrow {
+  position: relative;
+  display: block;
+  width: 31px;
+  height: 31px;
+  flex: none;
+  cursor: pointer;
+}
+
+.icon-arrow img {
+  position: absolute;
+  top: -9.38%;
+  left: -15.63%;
+  width: 131.26%;
+  height: 131.26%;
+  max-width: none;
+}
+
+.icon-arrow.swiper-button-disabled {
+  cursor: default;
+}
+
+.icon-arrow.swiper-button-lock {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .icon-arrow {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.dots.swiper-pagination {
+  position: static;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+}
+
+.dots.swiper-pagination-lock {
+  display: none;
+}
+
+.dots .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 !important;
+  background: #d9d9d9;
+  opacity: 1;
+}
+
+.story-dots .swiper-pagination-bullet {
+  background: #fff;
+}
+
+.dots.swiper-pagination .swiper-pagination-bullet-active {
+  background: #705ca7;
+}
+
+@media (min-width: 1280px) {
+  .dots .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* ---------- 6. FAQ ---------- */
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
