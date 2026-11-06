@@ -184,7 +184,7 @@ const PROGRAM_ITEMS = [
               .map(
                 (src, i) => `
               <div class="swiper-slide">
-                <img src="${esc(src)}" alt="ภาพก่อนและหลังทำ ${esc(item.bar)} เคสที่ ${i + 1}" loading="lazy" class="w-full aspect-[507/456] object-cover rounded-[18px] xl:rounded-[30px]" />
+                <img src="${esc(src)}" ${srcsetAttr(src, "(min-width: 1280px) 507px, 275px")} alt="ภาพก่อนและหลังทำ ${esc(item.bar)} เคสที่ ${i + 1}" loading="lazy" class="w-full aspect-[507/456] object-cover rounded-[18px] xl:rounded-[30px]" />
               </div>`,
               )
               .join("")}
@@ -201,7 +201,7 @@ const PROGRAM_ITEMS = [
           .map(
             (src, i) => `
           <button type="button" data-slide="${i + 1}" aria-label="ดูเคสที่ ${i + 2}" class="case-thumb">
-            <img src="${esc(src)}" alt="" loading="lazy" class="w-full aspect-[178/160] object-cover rounded-[10px] xl:rounded-[18px]" />
+            <img src="${esc(src)}" ${srcsetAttr(src, "(min-width: 1280px) 178px, 30vw")} alt="" loading="lazy" class="w-full aspect-[178/160] object-cover rounded-[10px] xl:rounded-[18px]" />
           </button>`,
           )
           .join("")}
@@ -214,7 +214,7 @@ const PROGRAM_ITEMS = [
       ${item.media.images
         .map(
           (src, i) => `
-        <img src="${esc(src)}" alt="ภาพก่อนและหลังทำ ${esc(item.bar)} เคสที่ ${i + 1}" loading="lazy" class="w-full ${item.media.ratio} object-cover ${item.media.radius}" />`,
+        <img src="${esc(src)}" ${srcsetAttr(src, "(min-width: 1280px) 507px, 275px")} alt="ภาพก่อนและหลังทำ ${esc(item.bar)} เคสที่ ${i + 1}" loading="lazy" class="w-full ${item.media.ratio} object-cover ${item.media.radius}" />`,
         )
         .join("")}
     </div>`;

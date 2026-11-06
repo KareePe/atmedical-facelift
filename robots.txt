@@ -1,0 +1,19 @@
+# robots.txt — AT Medical Clinic Facelift
+
+User-agent: *
+Allow: /
+
+# AI / answer-engine crawlers (AEO) — อนุญาตให้เก็บข้อมูลได้
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://facelift.atmedicalclinic.com/sitemap.xml

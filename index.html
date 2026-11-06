@@ -3,33 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-54RM52BN');</script>
+    <!-- End Google Tag Manager -->
     <title>ศัลยกรรมดึงหน้า Facelift ยกกระชับถึงชั้น SMAS | AT Medical Clinic</title>
     <meta
       name="description"
       content="ศัลยกรรมดึงหน้า (Facelift) ยกกระชับถึงชั้น SMAS ดูแลแก้มตก ร่องแก้ม และกรอบหน้า ออกแบบตามโครงสร้างใบหน้าแต่ละบุคคล โดย AT Medical Clinic by Eye Bangkok Hospital"
     />
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
     <meta name="author" content="AT Medical Clinic by Eye Bangkok Hospital" />
     <meta name="theme-color" content="#491251" />
+    <meta name="format-detection" content="telephone=yes" />
 
-    <!-- TODO: เพิ่ม canonical, og:url และ og:image เมื่อรู้โดเมนจริงของหน้านี้ -->
+    <!-- โดเมนหลักของหน้านี้ (ถ้าย้ายโดเมน ให้แก้ทุกจุดรวมถึง robots.txt / sitemap.xml) -->
+    <link rel="canonical" href="https://facelift.atmedicalclinic.com/" />
+    <link rel="alternate" hreflang="th" href="https://facelift.atmedicalclinic.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://facelift.atmedicalclinic.com/" />
+
+    <!-- Open Graph (Facebook / LINE) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="AT Medical Clinic by Eye Bangkok Hospital" />
+    <meta property="og:url" content="https://facelift.atmedicalclinic.com/" />
     <meta property="og:title" content="ศัลยกรรมดึงหน้า Facelift ยกกระชับถึงชั้น SMAS | AT Medical Clinic" />
     <meta
       property="og:description"
       content="ดูแลแก้มตก ร่องแก้ม และกรอบหน้า ออกแบบตามโครงสร้างใบหน้าแต่ละบุคคล"
     />
+    <meta property="og:image" content="https://facelift.atmedicalclinic.com/assets/img/reasons-team.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:alt" content="ทีมแพทย์ AT Medical Clinic" />
     <meta property="og:locale" content="th_TH" />
 
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ศัลยกรรมดึงหน้า Facelift ยกกระชับถึงชั้น SMAS | AT Medical Clinic" />
+    <meta
+      name="twitter:description"
+      content="ดูแลแก้มตก ร่องแก้ม และกรอบหน้า ออกแบบตามโครงสร้างใบหน้าแต่ละบุคคล"
+    />
+    <meta name="twitter:image" content="https://facelift.atmedicalclinic.com/assets/img/reasons-team.webp" />
+    <meta name="twitter:image:alt" content="ทีมแพทย์ AT Medical Clinic" />
+
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+
+    <!-- Preload รูป LCP ของ hero (bg-hero = background-image ของ section#home) วางก่อน CSS ให้เริ่มโหลดเร็วที่สุด -->
+    <link rel="preload" as="image" href="assets/img/bg-hero.webp" fetchpriority="high" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/img/hero-person.webp"
+      imagesrcset="assets/img/hero-person-400.webp 400w, assets/img/hero-person.webp 575w"
+      imagesizes="(min-width: 1280px) 575px, 316px"
+      fetchpriority="high"
+    />
 
     <!-- App CSS: Tailwind + style.css รวมเป็นไฟล์เดียว (build ด้วย `npm run build:css`) -->
     <link rel="stylesheet" href="assets/app.css" />
-
-    <!-- Preload รูป LCP ของ hero (background-image ใน section#home) -->
-    <link rel="preload" as="image" href="assets/img/hero-person.webp" fetchpriority="high" />
-    <link rel="preload" as="image" href="assets/img/bg-hero.webp" />
 
     <link
       rel="preload"
@@ -47,14 +87,12 @@
     />
 
     <!-- Swiper / AOS: ใช้เฉพาะ below-the-fold โหลดแบบไม่ block render -->
-    <link rel="preload" as="style" href="assets/vendor/swiper/swiper-bundle.min.css" />
     <link
       rel="stylesheet"
       href="assets/vendor/swiper/swiper-bundle.min.css"
       media="print"
       onload="this.media = 'all'"
     />
-    <link rel="preload" as="style" href="assets/vendor/aos/aos.css" />
     <link
       rel="stylesheet"
       href="assets/vendor/aos/aos.css"
@@ -65,44 +103,211 @@
       <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
       <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
     </noscript>
-
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-54RM52BN");
+    <!-- Structured data (JSON-LD) สำหรับ SEO / AEO — FAQ ต้องตรงกับ QNA_ITEMS ใน assets/js/qna.js -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://facelift.atmedicalclinic.com/#website",
+            "url": "https://facelift.atmedicalclinic.com/",
+            "name": "AT Medical Clinic by Eye Bangkok Hospital",
+            "inLanguage": "th-TH",
+            "publisher": {
+              "@id": "https://facelift.atmedicalclinic.com/#clinic"
+            }
+          },
+          {
+            "@type": "MedicalClinic",
+            "@id": "https://facelift.atmedicalclinic.com/#clinic",
+            "name": "AT Medical Clinic by Eye Bangkok Hospital",
+            "url": "https://facelift.atmedicalclinic.com/",
+            "logo": "https://facelift.atmedicalclinic.com/favicon.png",
+            "image": "https://facelift.atmedicalclinic.com/assets/img/reasons-team.webp",
+            "telephone": "+66-92-889-3872",
+            "priceRange": "฿฿฿",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "88 ซอยเพชรเกษม 70 แขวงบางแคเหนือ",
+              "addressLocality": "เขตบางแค",
+              "addressRegion": "กรุงเทพมหานคร",
+              "postalCode": "10160",
+              "addressCountry": "TH"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "11:00",
+                "closes": "20:00"
+              }
+            ],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+66-92-889-3872",
+                "contactType": "customer service",
+                "availableLanguage": [
+                  "th"
+                ]
+              }
+            ],
+            "sameAs": [
+              "https://lin.ee/sHKwZrG"
+            ],
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "บริษัท โรงพยาบาลตากรุงเทพ จำกัด"
+            },
+            "medicalSpecialty": "PlasticSurgery"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://facelift.atmedicalclinic.com/#webpage",
+            "url": "https://facelift.atmedicalclinic.com/",
+            "name": "ศัลยกรรมดึงหน้า Facelift ยกกระชับถึงชั้น SMAS | AT Medical Clinic",
+            "description": "ศัลยกรรมดึงหน้า (Facelift) ยกกระชับถึงชั้น SMAS ดูแลแก้มตก ร่องแก้ม และกรอบหน้า ออกแบบตามโครงสร้างใบหน้าแต่ละบุคคล โดย AT Medical Clinic by Eye Bangkok Hospital",
+            "inLanguage": "th-TH",
+            "isPartOf": {
+              "@id": "https://facelift.atmedicalclinic.com/#website"
+            },
+            "about": {
+              "@id": "https://facelift.atmedicalclinic.com/#procedure"
+            },
+            "primaryImageOfPage": "https://facelift.atmedicalclinic.com/assets/img/hero-person.webp"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "@id": "https://facelift.atmedicalclinic.com/#procedure",
+            "name": "ศัลยกรรมดึงหน้า (Facelift) ยกกระชับถึงชั้น SMAS",
+            "alternateName": [
+              "Facelift",
+              "SMAS Facelift",
+              "ดึงหน้า",
+              "Baby Face Lift"
+            ],
+            "procedureType": "https://schema.org/SurgicalProcedure",
+            "bodyLocation": "ใบหน้า",
+            "description": "การผ่าตัดยกกระชับเนื้อเยื่อใบหน้าในระดับลึกถึงชั้น SMAS ดูแลแก้มตก ร่องแก้ม ร่องน้ำหมาก และกรอบหน้า วางแผนเฉพาะบุคคลโดยแพทย์",
+            "howPerformed": "ผ่าตัดภายใต้ยาชาเฉพาะที่หรือดมยาสลบ ตามการประเมินของแพทย์",
+            "provider": {
+              "@id": "https://facelift.atmedicalclinic.com/#clinic"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://facelift.atmedicalclinic.com/#faq",
+            "url": "https://facelift.atmedicalclinic.com/#faq",
+            "inLanguage": "th-TH",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "ดึงหน้าอยู่ได้นานแค่ไหน?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ผลลัพธ์ของการดึงหน้าสามารถคงอยู่ได้หลายปี ขึ้นอยู่กับอายุ สภาพผิว โครงสร้างใบหน้า การดูแลตัวเอง และพฤติกรรมการใช้ชีวิตของแต่ละบุคคล ทั้งนี้กระบวนการเสื่อมตามวัยยังคงดำเนินต่อไปตามธรรมชาติ"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "อายุเท่าไรถึงควรทำ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ไม่มีอายุที่กำหนดตายตัว การตัดสินใจทำ Facelift ควรพิจารณาจากระดับความหย่อนคล้อย และโครงสร้างใบหน้าเป็นหลัก โดยทั่วไปมักเหมาะกับผู้ที่เริ่มมีแก้มตก กรอบหน้าไม่ชัด หรือความหย่อนคล้อยที่เห็นชัด และควรได้รับการประเมินจากแพทย์ก่อนทุกครั้ง"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "เจ็บไหม?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ระหว่างทำจะมีการใช้ยาชา หลังทำอาจรู้สึกตึง บวม หรือระบมได้ในช่วงแรก ซึ่งอาการและระยะเวลาฟื้นตัวแตกต่างกันในแต่ละบุคคล"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ต้องวางยาสลบหรือไม่?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "มีทั้งการผ่าตัดแบบ ยาชาเฉพาะที่ และ ดมยาสลบ ขึ้นอยู่กับหัตถการและการประเมินของแพทย์ กรณี ดมยาสลบ จะเข้ารับการผ่าตัดที่ โรงพยาบาลตากรุงเทพ (เพชรเกษม 70) โดยมีวิสัญญีแพทย์ดูแลการดมยาสลบและติดตามอาการตลอดการผ่าตัด เพื่อเพิ่มความมั่นใจในทุกขั้นตอน"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "พักฟื้นกี่วัน?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "โดยทั่วไปอาจมีอาการบวม ช้ำ หรือตึงในช่วง 1 ถึง 2 สัปดาห์แรก และอาการจะค่อย ๆ ดีขึ้นตามลำดับ หลายคนสามารถกลับไปใช้ชีวิตประจำวันได้ภายในประมาณ 1 ถึง 2 สัปดาห์ แต่การเข้าที่ของเนื้อเยื่อและผลลัพธ์โดยรวมอาจใช้เวลาหลายสัปดาห์ถึงหลายเดือน"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "แผลอยู่ตรงไหน?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ตำแหน่งแผลขึ้นอยู่กับเทคนิคที่ใช้ เช่น บริเวณไรผม ขมับ หน้าใบหู หลังใบหู หรือแนวที่สามารถพรางแผลได้ แพทย์จะวางแนวแผลให้เหมาะกับโครงสร้างใบหน้า และเทคนิคที่เลือกใช้ในแต่ละเคส"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "สามารถทำร่วมกับศัลยกรรมตาหรือ Sub Brow Lift ได้หรือไม่?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ในบางกรณีสามารถวางแผนทำร่วมกันได้ หากแพทย์ประเมินแล้วว่าเหมาะสมและปลอดภัย การทำร่วมกันอาจช่วยดูแลหลายปัญหาในครั้งเดียว แต่จำเป็นต้องประเมินสภาพร่างกาย โครงสร้างใบหน้า และแผนการผ่าตัดโดยแพทย์เป็นรายบุคคล"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Facelift ต่างจาก HIFU / Ulthera / Thread Lift อย่างไร?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Facelift เป็นการผ่าตัดที่ช่วยยกและปรับเนื้อเยื่อที่หย่อนคล้อยในระดับลึก เหมาะกับผู้ที่มีความหย่อนคล้อยชัดเจน ส่วน HIFU และ Ulthera เป็นหัตถการแบบไม่ผ่าตัดที่ใช้พลังงานกระตุ้นการยกกระชับ ส่วน Thread Lift หรือการร้อยไหม เป็นการใช้ไหมช่วยพยุงเนื้อเยื่อ โดยผลลัพธ์ ระยะพักฟื้น และความเหมาะสมแตกต่างกันไปตามระดับปัญหาและโครงสร้างของแต่ละคน"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ต้องพบแพทย์ก่อนทุกเคสหรือไม่?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ควรพบแพทย์เพื่อประเมินก่อนทุกเคส เนื่องจากแต่ละคนมีปัญหา ระดับความหย่อนคล้อย โครงสร้างใบหน้า และสุขภาพโดยรวมแตกต่างกัน การประเมินโดยแพทย์จะช่วยเลือกเทคนิคที่เหมาะสม วางแผนการรักษา และประเมินความปลอดภัยได้อย่างเหมาะสม"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ราคาดึงหน้าที่ AT MEDICAL CLINIC เท่าไหร่ รวมอะไรบ้าง?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ราคาศัลยกรรมดึงหน้าขึ้นอยู่กับบริเวณที่ทำ เทคนิคที่ใช้ และระดับความหย่อนคล้อยของแต่ละบุคคล โดยแพทย์จะเป็นผู้ประเมินและวางแผนก่อนเข้ารับบริการ ทั้งนี้ค่าใช้จ่ายและรายการที่รวมในแพ็กเกจจะแจ้งให้ทราบอย่างชัดเจนก่อนตัดสินใจทำหัตถการ"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ใครที่ยังไม่เหมาะกับการทำ Facelift?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ผู้ที่มีโรคประจำตัวที่ยังควบคุมไม่ได้ มีภาวะเลือดออกง่ายหรือรับประทานยาบางชนิดที่มีผลต่อการแข็งตัวของเลือด ผู้ที่มีการติดเชื้อหรือแผลอักเสบบริเวณที่จะผ่าตัด รวมถึงผู้ที่สุขภาพโดยรวมยังไม่พร้อม ควรได้รับการประเมินจากแพทย์ก่อนทุกเคส เพื่อพิจารณาความเหมาะสมและความปลอดภัยเป็นรายบุคคล"
+                }
+              }
+            ]
+          }
+        ]
+      }
     </script>
-    <!-- End Google Tag Manager -->
   </head>
   <body class="bg-white text-ink font-sans antialiased">
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-54RM52BN"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54RM52BN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-    <!-- ===== Preloader ===== -->
-    <div
-      id="preloader"
-      class="fixed inset-0 z-[9999] flex flex-col items-center justify-center gap-[20px] bg-lilac-pale transition-opacity duration-500 motion-reduce:transition-none"
-    >
-      <img src="assets/img/icons/logo-main-d.svg" alt="AT Medical Clinic" class="w-full max-w-[200px]" />
-      <div
-        class="w-[44px] h-[44px] rounded-full border-4 border-lilac border-t-plum animate-spin motion-reduce:animate-none"
-      ></div>
-    </div>
 
     <!-- ===== Header ===== -->
     <header id="header"
@@ -138,7 +343,24 @@
             <span class="block text-accent">ดูแลแก้มตก ร่องแก้ม และกรอบหน้า</span>
             <span class="block">ออกแบบตามโครงสร้างใบหน้า<br class="xl:hidden" />แต่ละบุคคล</span>
           </h1>
-          <ul class="hero-points w-full flex flex-col gap-[4px] xl:gap-[8px]"></ul>
+          <ul class="hero-points w-full flex flex-col gap-[4px] xl:gap-[8px]">
+            <li class="flex items-center gap-[14px] xl:gap-[16px]">
+              <img src="assets/img/icons/check.svg" alt="" width="26" height="26" class="shrink-0 w-[26px] h-[26px] m-[3px] xl:m-[3px]" />
+              <span class="text-ink-muted text-[22px] leading-[22px] xl:text-[30px] xl:leading-[32px]">ยกกระชับลึกถึงชั้น SMAS ช่วยพยุงโครงสร้าง<br class="hidden min-[380px]:inline xl:hidden" />ใบหน้าในระดับลึก</span>
+            </li>
+            <li class="flex items-center gap-[14px] xl:gap-[16px]">
+              <img src="assets/img/icons/check.svg" alt="" width="26" height="26" class="shrink-0 w-[26px] h-[26px] m-[3px] xl:m-[3px]" />
+              <span class="text-ink-muted text-[22px] leading-[22px] xl:text-[30px] xl:leading-[32px]">ใช้เทคนิคยาชาเฉพาะที่ ไม่ต้องวางยาสลบ <br class="hidden min-[380px]:inline xl:hidden" />ลดความกังวล</span>
+            </li>
+            <li class="flex items-center gap-[14px] xl:gap-[16px]">
+              <img src="assets/img/icons/check.svg" alt="" width="26" height="26" class="shrink-0 w-[26px] h-[26px] m-[3px] xl:m-[3px]" />
+              <span class="text-ink-muted text-[22px] leading-[22px] xl:text-[30px] xl:leading-[32px]">ประหยัดเวลาในการทำหัตถการและฟื้นตัวได้เร็วขึ้น</span>
+            </li>
+            <li class="flex items-center gap-[14px] xl:gap-[16px]">
+              <img src="assets/img/icons/check.svg" alt="" width="26" height="26" class="shrink-0 w-[26px] h-[26px] m-[3px] xl:m-[3px]" />
+              <span class="text-ink-muted text-[22px] leading-[22px] xl:text-[30px] xl:leading-[32px]">บวมช้ำน้อยลง ด้วยการวางแผนและดูแล<br class="hidden min-[380px]:inline xl:hidden" />อย่างละเอียดโดยแพทย์</span>
+            </li>
+          </ul>
           <a href="https://lin.ee/sHKwZrG" target="_blank" rel="noopener" class="btn btn-plum">
             <img src="assets/img/icons/line-w.svg" alt="" class="btn-icon-line" />
             ปรึกษาแพทย์เฉพาะทางฟรี
@@ -158,6 +380,8 @@
         <div class="relative left-1/2 -translate-x-1/2 w-[390px] h-[387px] -mt-[2px] xl:left-0 xl:transform-none xl:w-auto xl:mt-0 xl:static xl:h-0">
           <img
             src="assets/img/hero-person.webp"
+            srcset="assets/img/hero-person-400.webp 400w, assets/img/hero-person.webp 575w"
+            sizes="(min-width: 1280px) 575px, 316px"
             alt=""
             width="575"
             height="698"
@@ -230,6 +454,8 @@
           <div class="w-full flex flex-col xl:flex-row items-center xl:items-start justify-center gap-[30px]">
             <img
               src="assets/img/reasons-team.webp"
+              srcset="assets/img/reasons-team-640.webp 640w, assets/img/reasons-team.webp 1080w"
+              sizes="(min-width: 1280px) 586px, 330px"
               alt="ทีมแพทย์ AT Medical Clinic"
               width="1080"
               height="1080"
@@ -261,6 +487,8 @@
       <section id="branches" class="bg-white pb-[43px] xl:pb-[97px]">
         <img
           src="assets/img/map.webp"
+          srcset="assets/img/map-640.webp 640w, assets/img/map.webp 1080w"
+          sizes="(min-width: 1280px) 1080px, 352px"
           alt="แผนที่สาขา AT Medical Clinic ทั่วประเทศ"
           width="1080"
           height="1080"
@@ -337,22 +565,20 @@
       </svg>
     </button>
 
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+    <script src="assets/vendor/aos/aos.js" defer></script>
 
     <!-- Scripts ของหน้านี้ (utils.js ต้องมาก่อนไฟล์ที่ใช้ esc/escBr) -->
     <script src="assets/js/utils.js"></script>
-    <script src="assets/js/preloader.js"></script>
-    <script src="assets/js/hero-list.js"></script>
     <script src="assets/js/program-list.js"></script>
     <script src="assets/js/story-list.js"></script>
     <script src="assets/js/reason-list.js"></script>
     <script src="assets/js/qna.js"></script>
-    <script src="assets/js/slide.js"></script>
-    <script src="assets/js/header-scroll.js"></script>
-    <script src="assets/js/back-to-top.js"></script>
+    <script src="assets/js/slide.js" defer></script>
+    <script src="assets/js/header-scroll.js" defer></script>
+    <script src="assets/js/back-to-top.js" defer></script>
     <script>
-      AOS.init({ once: true });
+      document.addEventListener("DOMContentLoaded", () => AOS.init({ once: true }));
     </script>
   </body>
 </html>

@@ -38,7 +38,7 @@ const STORY_SETS = {
                 (item) => `
               <div class="swiper-slide">
                 <a href="${esc(item.video || STORY_FALLBACK_URL)}" target="_blank" rel="noopener" aria-label="${esc(item.alt)}" class="relative block" ${item.video ? `data-video="${esc(item.video)}"` : ""}>
-                  <img src="${esc(item.image)}" alt="${esc(item.alt)}" loading="lazy" class="w-full aspect-[340/605] object-cover rounded-[25px]" />
+                  <img src="${esc(item.image)}" ${srcsetAttr(item.image, "(min-width: 1280px) 340px, 285px")} alt="${esc(item.alt)}" loading="lazy" class="w-full aspect-[340/605] object-cover rounded-[25px]" />
                   <img src="assets/img/icons/play.svg" alt="" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[58px] h-[58px] xl:w-[70px] xl:h-[70px]" />
                 </a>
               </div>`,

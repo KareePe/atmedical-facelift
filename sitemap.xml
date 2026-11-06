@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://facelift.atmedicalclinic.com/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <image:image>
+      <image:loc>https://facelift.atmedicalclinic.com/assets/img/hero-person.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://facelift.atmedicalclinic.com/assets/img/reasons-team.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://facelift.atmedicalclinic.com/assets/img/map.webp</image:loc>
+    </image:image>
+  </url>
+</urlset>
